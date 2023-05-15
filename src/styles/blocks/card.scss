@@ -6,12 +6,12 @@
   border: 1px solid rgba(243, 243, 243, 1);
   border-radius: 5px;
   margin-bottom: 46px;
-  // transition-property: transform;
-  // transition-duration: 300ms;
+  transition-property: transform;
+  transition-duration: 300ms;
   
-  // &:hover {
-  //   transform: scale(1.2, 1.2);
-  // }
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
 
   &:not(:nth-child(4n)) {
     margin-right: 48px;
@@ -34,9 +34,9 @@
     margin-bottom: 4px;
     transition: color 300ms;
 
-    // &:hover {
-    //   color: #34568b;
-    // }
+    &:hover {
+      color: #34568b;
+    }
   }
 
   &__code {
