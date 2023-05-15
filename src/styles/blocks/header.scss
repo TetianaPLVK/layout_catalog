@@ -1,0 +1,70 @@
+// #region heder
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #fff;
+  padding-right: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo__img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding-left: 50px;
+
+}
+//#endregion  
+
+// #region nav
+.nav {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  
+  &__item:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    line-height: 60px;
+    @include style-text (12px, 500, $color-main-text);
+    @extend %style-link;
+    transition-property: animation;
+    // transition-duration: 300ms;
+    
+    &:hover {
+      // animation: hover-color 900ms;
+      color: $color-link-blue;
+    }
+
+    //   @keyframes hover-color {
+    //   from {
+    //     color: $color-link-blue;
+    //   }
+    //   to {
+    //     color: red;
+    //   }      
+    // }
+  
+    &--active::after {
+      position: absolute;
+      content: "";
+      top: 56px;
+      width: 100%;
+      height: 4px;
+      border-radius: 8px;
+      display: block;
+      background-color: $color-link-blue;
+    }
+  }
+}
+
+.is-active:link {
+  color: $color-link-blue;
+}

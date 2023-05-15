@@ -1,0 +1,3 @@
+@function contentWidth ($numCards, $numGaps) {
+  @return $card-width * $numCards + $numGaps* $cards-gap;
+}

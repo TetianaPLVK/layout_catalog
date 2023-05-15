@@ -1,0 +1,10 @@
+.main {
+  padding: 50px 40px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: contentWidth(4, 3);
+}
